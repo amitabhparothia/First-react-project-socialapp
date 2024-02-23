@@ -16,8 +16,9 @@ body ,html {
  background-color: rgb(130, 111, 239);
  display: flex;
  align-items: center;
- justify-content:center ;
+ justify-content:center;
  text-decoration: none;
+
 }
 
 .navbar .links {
