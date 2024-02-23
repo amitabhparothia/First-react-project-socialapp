@@ -1,0 +1,48 @@
+.main-footer {
+    color: white;
+    background-color: rgb(97, 73, 230);
+    display: flex;
+    /* width: 100%;
+    height: 400%; */
+    align-items: center;
+    /* justify-content: flex-end; */
+    
+
+}
+
+ .main-footer .container {
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.main-footer .container .first-div{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 110px;
+}
+
+ /* .aboutlink {
+    color: whitesmoke;
+} */
+
+ .second-div {
+    /* background-color: black; */
+    color: white;
+    margin-right: 110px;
+}
+
+.sociallinks {
+    display: flex;
+    
+}
+
+a {
+    margin-right: 10px;
+}
+
+.about{
+    text-decoration: none;
+}
