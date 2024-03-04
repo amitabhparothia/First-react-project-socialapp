@@ -3,7 +3,8 @@
   flex: 1;
 }
 
-body ,html {
+body,
+html {
   height: 100%;
   margin: 0%;
   padding: 0%;
@@ -11,64 +12,91 @@ body ,html {
 }
 
 .navbar {
- width: 100%;
- height: 150px;
- background-color: rgb(130, 111, 239);
- display: flex;
- align-items: center;
- justify-content:center;
- text-decoration: none;
+  width: 100%;
+  height: 120px;
+  background-color: #0A1828;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
 
 }
 
 .navbar .links {
   text-decoration: none;
   text-align: center;
-  margin-right: 50px;
+  margin-left: 100px;
+  font-size: xx-large
 }
 
-.navbar.user {
-  display:flex;
+.navbar .links .home {
+  margin-right: 60px;
+}
+
+.navbar .links .about {
+  margin-right: 60px;
+}
+
+
+
+.navbar .user {
+  height: 120px;
+  width: 300px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
   
-
 }
 
+
+
 .links a {
-  color: rgb(255, 255, 255);
+  color: aquamarine;;
+  font-family: cursive;
   text-decoration: none;
-  /* border-bottom: 3px solid white; */
   padding-bottom: 2px;
   margin: 10px;
 
 }
 
+
+
 .user p {
-  font-size: 15px;
-  margin-right: 10px;
-  padding-top: 30px;
-  color: rgb(233, 227, 227);
-  
+  font-size: 22px;
+  /* width: 190px; */
+  height: 10px;
+  margin-left: 10px;
+  /* margin-bottom: 30px; */
+  color: #178582;
+  font-family: cursive;
+
 }
+.user .usernameandbutton{
+  display: block;
+  /* justify-content: center; */
+  /* align-content: space-between; */
+  /* align-items: space-evenly; */
+}
+
+
+
 
 .user img {
-  font-size: 15px;
-  border-radius: 200px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  height: 50px;
-  width:50px;
+  border-radius: 35px;
+  height: 70px;
+  width: 70px;
 }
 
-.user {
-  display:block
+.user button {
+  color: #178582;
+  margin-right: 30px;
+  margin-bottom: 23px;
+  
 }
 
 input,
 textarea {
-  font-family: "Nunito" , sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .create-post {
@@ -78,7 +106,7 @@ textarea {
   justify-content: center;
 }
 
-form{
+form {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -89,7 +117,7 @@ form{
   backdrop-filter: blur(5px);
   background-color: rgb(130, 111, 239);
   overflow: hidden;
-  
+
 }
 
 input,
@@ -99,7 +127,7 @@ textarea {
   background-color: wheat;
   border: 0px transparent;
   border-radius: 5px;
-  color: rgb(18, 4, 9);
+  color: rgb(221, 20, 90);
   font-size: 16px;
   z-index: 1;
 }
@@ -109,6 +137,7 @@ textarea {
 }
 
 .page-context {
+  background-color: #178582;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -118,4 +147,3 @@ textarea {
 .mainnfooter {
   margin-top: 500px;
 }
-

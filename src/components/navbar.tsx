@@ -12,23 +12,31 @@ export const Navbar = () => {
     return (
     <div className="navbar">
         <div className="links">
-           <Link to="/">Home</Link>
+           <Link to="/" className="home">Home</Link>
+           <Link  to="/about" className="about">About</Link>
            {! user ?(
-            <Link to="/login">Login</Link>
+            <Link to="/login" className="login">Login</Link>
             ) : (
-           <Link to="/post">Create Post</Link>
+           <Link to="/post" className="createpost">Create Post</Link>
         )}
-        <Link  to="/about">About</Link>
+        
         </div>
         <div className="user">
+            
             {user && (
                 <>
-                  <p>{user?.displayName}</p>
-                  <img src={user?.photoURL || ""} width="50" height="50" />
                 
-                  <button onClick={signUserOut}>Log Out</button>
+                  <img src={user?.photoURL || ""} />
+                  
+                <div className="usernameandbutton">
+                <p>{user?.displayName}</p>
+                 <button onClick={signUserOut}>Log Out</button>
+                </div>
+                
+                
                 </>
             )}
+            
         </div>   
     </div>
     );

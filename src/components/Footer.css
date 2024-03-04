@@ -1,11 +1,13 @@
 .main-footer {
     color: white;
-    background-color: rgb(97, 73, 230);
+    font-family: cursive;
+    /* font-size: 20px; */
+    background-color: #0A1828;
     display: flex;
     /* width: 100%;
     height: 400%; */
     align-items: center;
-    /* justify-content: flex-end; */
+    justify-content: space-between;
     
 
 }
@@ -45,4 +47,25 @@ a {
 
 .about{
     text-decoration: none;
+}
+
+.about{
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 28px;
+}
+.contact{
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 28px;
+}
+
+.sociallink{
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 28px;
+}
+
+.sociallinks{
+    color: aqua;
 }
