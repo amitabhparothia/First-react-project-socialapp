@@ -71,20 +71,24 @@ export const Post = (props : Props) => {
 
 
     return ( 
-      <div >
-        <div className="title">
-            <h1>{post.title}</h1>
+      <div  className="post">
+        <div className="post-title">
+            <h1>Tittle - {post.title}</h1>
+        </div>
+
+        <div className="post-descr">
+            <p><b>Post -</b> {post.description}</p>
         </div>
 
         <div>
-            <p>{post.description}</p>
-        </div>
-
-        <div>
-            <p>@{post.username}</p>
-            <button onClick={hasUserLiked ? removeLike : addLike}>{hasUserLiked ? <>&#128078;</>: <>&#128077;</>}
+            <p className="post-username"><b>Username - @</b>{post.username}</p>
+            <div className="post-liked">
+            <button  className="liked-button" onClick={hasUserLiked ? removeLike : addLike}>{hasUserLiked ? <>&#128078;</>: <>&#128077;</>}
             </button>
             { likes && <p> Likes :{likes?.length} </p>}
+            </div>
+            
+            
         </div>
 
       </div>
